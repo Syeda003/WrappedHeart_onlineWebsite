@@ -91,7 +91,7 @@ session_start();
     <div class="leftpart">
     <div class="backicon d-flex">
       <a href="Main.php" data-toggle="tooltip" title="Exit"><i class="fa-solid fa-right-to-bracket fa-rotate-180"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <h1 class="text-center">Sign Up Form</h1>
+      <h1 class="text-center">Sign </h1>
     </div>
   
 
@@ -127,7 +127,7 @@ session_start();
       </div>  
       <div class="input-container">
     <i class="fa-solid fa-key icon"></i>
-        <input class="input-field" type="password" placeholder="Confirm Password" name="nCpassword" required autocomplete="off">
+        <input class="input-field" type="=password" placeholder="Confirm Password" name="nCpassword" required autocomplete="off">
       </div>  
       <div class="input-container">
        <!-- <button onclick="popup()" name="submit">Submit</button>  -->
