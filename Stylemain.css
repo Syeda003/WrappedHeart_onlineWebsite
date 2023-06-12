@@ -1,0 +1,44 @@
+.form_bg{
+    background: linear-gradient(90deg, rgba(249,121,108,1) 0%, rgba(244,185,179,1) 41%, rgba(249,121,108,1) 100%);
+    align-items: center;
+    display:flex;
+    height:100vh;
+   
+}
+h2{
+    font-family: 'UnifrakturCook';
+    font-size: 50px;
+    color:#6e2824;
+
+}
+p{
+    font-family: 'Akaya Telivigala';
+    font-size: 20px;
+}
+button{
+    font-family: 'Akaya Telivigala';
+    border: none;
+    background-color:#de3027 ;
+    padding:10px 20px 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.box2{
+    padding-top: 40px;
+}
+button:hover{
+    background-color: #de3027;
+    opacity: 0.8;
+    color: white;
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:white;
+    
+}
