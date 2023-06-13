@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
         else{
             ?>
             <script>
-                alert("Invalid Email")
+                alert("Invalid email")
             </script>
             <?php
         }
