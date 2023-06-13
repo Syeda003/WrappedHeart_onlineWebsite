@@ -22,17 +22,32 @@ if(isset($_POST['submit'])){
    
     if($email_count==1){
         
-        $pass = mysqli_fetch_assoc($query);
-
-        $db_pass = $pass['Password'];
-
-        echo .md5($db_pass).;
-        // ?>
-        // <script>
-        //  var variableData = "";
-        //  alert(variableData);
-        // </script>
-        // <?php
+        // $pass = mysqli_fetch_assoc($query);
+        // $db_pass = $pass['Password'];
+        $newPassword = substr(md5(uniqid(mt_rand(), true)), 0, 8);
+        $hashedPassword = md5($newPassword);
+        $sql = "UPDATE signupdb SET Password = '$hashedPassword', CPassword = '$hashedPassword' WHERE Email = '$email'";
+        if(mysqli_query($conn,$sql))
+        {
+            ?>
+            <script>
+                alert("Successful");
+            </script>
+            <?php
+        }
+        else{
+            ?>
+            <script>
+                alert("Failed");
+            </script>
+            <?php
+        }
+        ?>
+        <script>
+         var variableData = "<?php echo $newPassword; ?>";
+         alert(variableData);
+        </script>
+        <?php
       
     }
         else{
