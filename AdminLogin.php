@@ -31,7 +31,7 @@
       <div class="pass-txt"><a href="#">Forgot password?</a></div>
       <input type="submit" value="Login">
     </form>
-    <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+   
   </div>
 
   <script src="script.js"></script>
