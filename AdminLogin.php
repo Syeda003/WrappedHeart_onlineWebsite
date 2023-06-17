@@ -4,37 +4,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form validation in HTML & CSS | CodingNepal</title>
-  <link rel="stylesheet" href="StyleAdminLogin1.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>Login Form validation</title>
+  <?php include'Links.php' ?>
+   <?php include'DBconnect.php' ?>
+  <link rel="stylesheet" href="StyleAdminLogin2.css">
+  
 </head>
+
+<?php
+if(isset($_POST['submit'])){
+    $email = $_POST['nemail'];
+    $password = $_POST['npassword'];
+
+    $email_search="select * from adminlogin where Email = '$email'";
+    $query = mysqli_query($conn,$email_search);
+
+    $email_count = mysqli_num_rows($query);
+
+    if($email_count){
+        $pass = mysqli_fetch_assoc($query);
+
+        
+        if ($password === $pass["Password"]) {
+      
+            ?>
+            <script>
+                alert("Successful")
+            </script>
+            <?php
+             header("Location: Admin.php");
+        }
+        else{
+            ?>
+    <script>
+        alert("invalid password")
+    </script>
+    <?php
+        }
+      }
+        else{
+            ?>
+            <script>
+                alert("Invalid Email")
+            </script>
+            <?php
+        }
+    }
+
+?>
+
 <body>
   <div class="wrapper">
+    <div class="d-flex">
+  <a href="Main.php" ><i class="fa-solid fa-house"></i></a> 
     <header>Login Form</header>
-    <form action="#">
+    </div>
+    <form action="#" method="post">
       <div class="field email">
         <div class="input-area">
-          <input type="text" placeholder="Email Address">
+          <input type="text" placeholder="Email Address" name="nemail" required >
           <i class="icon fas fa-envelope"></i>
-          <i class="error error-icon fas fa-exclamation-circle"></i>
         </div>
-        <div class="error error-txt">Email can't be blank</div>
       </div>
       <div class="field password">
         <div class="input-area">
-          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Password" name="npassword" required>
           <i class="icon fas fa-lock"></i>
-          <i class="error error-icon fas fa-exclamation-circle"></i>
         </div>
-        <div class="error error-txt">Password can't be blank</div>
       </div>
       <div class="pass-txt"><a href="#">Forgot password?</a></div>
-      <input type="submit" value="Login">
+      <input type="submit" value="Login" class="btn" name="submit">
     </form>
    
   </div>
 
-  <script src="script.js"></script>
-
+ 
 </body>
 </html>

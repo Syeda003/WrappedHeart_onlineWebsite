@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <title> Responsiive Admin Dashboard | CodingLab </title>
-    <link rel="stylesheet" href="StyleAdmin.css">
+    <link rel="stylesheet" href="StyleAdmin1.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,61 +23,44 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="products.php">
             <i class='bx bx-box' ></i>
             <span class="links_name">Product</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="userlisting.php">
             <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Order list</span>
+            <span class="links_name">user list</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="orders.php">
             <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Analytics</span>
+            <span class="links_name">Current Orders</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="Delivery.php">
             <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Stock</span>
+            <span class="links_name">Delivery</span>
           </a>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-book-alt' ></i>
-            <span class="links_name">Total order</span>
+            <span class="links_name">Payments</span>
           </a>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-user' ></i>
-            <span class="links_name">Team</span>
+            <span class="links_name">Refund</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-message' ></i>
-            <span class="links_name">Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-heart' ></i>
-            <span class="links_name">Favrorites</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Setting</span>
-          </a>
-        </li>
+        
         <li class="log_out">
-          <a href="#">
+          <a href="Main.php">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Log out</span>
           </a>
@@ -95,8 +78,8 @@
         <i class='bx bx-search' ></i>
       </div>
       <div class="profile-details">
-        <img src="images/profile.jpg" alt="">
-        <span class="admin_name">Prem Shahi</span>
+       
+        <span class="admin_name">Syeda Arshiya</span>
         <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>
@@ -160,8 +143,7 @@
               <li><a href="#">02 Jan 2021</a></li>
               <li><a href="#">02 Jan 2021</a></li>
               <li><a href="#">02 Jan 2021</a></li>
-              <li><a href="#">02 Jan 2021</a></li>
-              <li><a href="#">02 Jan 2021</a></li>
+             
             </ul>
             <ul class="details">
             <li class="topic">Customer</li>
@@ -170,10 +152,7 @@
             <li><a href="#">Roe Parter</a></li>
             <li><a href="#">Diana Penty</a></li>
             <li><a href="#">Martin Paw</a></li>
-            <li><a href="#">Doe Alex</a></li>
-            <li><a href="#">Aiana Lexa</a></li>
-            <li><a href="#">Rexel Mags</a></li>
-             <li><a href="#">Tiana Loths</a></li>
+           
           </ul>
           <ul class="details">
             <li class="topic">Sales</li>
@@ -181,11 +160,8 @@
             <li><a href="#">Pending</a></li>
             <li><a href="#">Returned</a></li>
             <li><a href="#">Delivered</a></li>
-            <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
             <li><a href="#">Delivered</a></li>
-             <li><a href="#">Pending</a></li>
-            <li><a href="#">Delivered</a></li>
+           
           </ul>
           <ul class="details">
             <li class="topic">Total</li>
@@ -194,10 +170,7 @@
             <li><a href="#">$25.88</a></li>
             <li><a href="#">$170.66</a></li>
             <li><a href="#">$56.56</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
+         
           </ul>
           </div>
           <div class="button">
@@ -209,55 +182,33 @@
           <ul class="top-sales-details">
             <li>
             <a href="#">
-              <img src="images/sunglasses.jpg" alt="">
+            
               <span class="product">Vuitton Sunglasses</span>
             </a>
             <span class="price">$1107</span>
           </li>
           <li>
             <a href="#">
-               <img src="images/jeans.jpg" alt="">
-              <span class="product">Hourglass Jeans </span>
+                            <span class="product">Hourglass Jeans </span>
             </a>
             <span class="price">$1567</span>
           </li>
           <li>
             <a href="#">
-             <img src="images/nike.jpg" alt="">
-              <span class="product">Nike Sport Shoe</span>
+                         <span class="product">Nike Sport Shoe</span>
             </a>
             <span class="price">$1234</span>
           </li>
           <li>
             <a href="#">
-              <img src="images/scarves.jpg" alt="">
+              
               <span class="product">Hermes Silk Scarves.</span>
             </a>
             <span class="price">$2312</span>
           </li>
-          <li>
-            <a href="#">
-              <img src="images/blueBag.jpg" alt="">
-              <span class="product">Succi Ladies Bag</span>
-            </a>
-            <span class="price">$1456</span>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/bag.jpg" alt="">
-              <span class="product">Gucci Womens's Bags</span>
-            </a>
-            <span class="price">$2345</span>
-          <li>
-            <a href="#">
-              <img src="images/addidas.jpg" alt="">
-              <span class="product">Addidas Running Shoe</span>
-            </a>
-            <span class="price">$2345</span>
-          </li>
+          
 <li>
             <a href="#">
-             <img src="images/shirt.jpg" alt="">
               <span class="product">Bilack Wear's Shirt</span>
             </a>
             <span class="price">$1245</span>

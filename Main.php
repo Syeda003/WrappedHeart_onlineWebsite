@@ -3,13 +3,16 @@
     <head>
         <title>Main Form</title>
         <?php include'Links.php' ?>
-        <link rel="stylesheet" href="Stylemain.css"> 
+        <link rel="stylesheet" href="Stylemain1.css"> 
             
     </head>
    <body>
    <div class="form_bg ">
     <div class="container">
-    
+
+    <a  href="AdminLogin.php" class="user" role="button"  data-toggle="tooltip" title="Admin Login">
+   <i class="fa-solid fa-circle-user"></i> </a>  
+
     <div class="row">
     <div class="col-12 col-md-12 col-lg-6 box2 ">
     <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">

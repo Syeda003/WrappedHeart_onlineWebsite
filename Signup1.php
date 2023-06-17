@@ -91,7 +91,7 @@ session_start();
     <div class="leftpart">
     <div class="backicon d-flex">
       <a href="Main.php" data-toggle="tooltip" title="Exit"><i class="fa-solid fa-right-to-bracket fa-rotate-180"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <h1 class="text-center">Sign </h1>
+      <h1 class="text-center">Sign Up</h1>
     </div>
   
 

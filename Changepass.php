@@ -74,7 +74,7 @@ if(isset($_POST['submit'])){
        <div class="col-12 col-md-12 col-lg-6 box2 ">
        <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
          <div class="backicon d-flex">
-         <a href="Main.php" data-toggle="tooltip" title="Login"><i class="fa-solid fa-right-to-bracket fa-rotate-180"></i></a> 
+         <a href="Login.php" data-toggle="tooltip" title="Login"><i class="fa-solid fa-right-to-bracket fa-rotate-180"></i></a> 
        <h5>Change</h5>&nbsp;&nbsp;
        <h5>Password</h5>
        </div>
