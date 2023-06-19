@@ -7,7 +7,7 @@ session_start();
             <title>SignUp Form</title>
             <?php include'Links.php' ?>
             <?php include'DBconnect.php' ?>
-            <link rel="stylesheet" href="Style.css">
+            <link rel="stylesheet" href="css/StyleSignup.css">
       </head>
 
      <body class="bb">

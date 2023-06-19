@@ -1,15 +1,14 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
     <html lang="en">
         <head>
             <title>Login Form</title>
             <?php include'Links.php' ?>
             <?php include'DBconnect.php' ?>
-            <link rel="stylesheet" href="StyleLogin.css">
+            <link rel="stylesheet" href="css/StyleLogin.css">
       </head>
 <?php
+session_start();
 if(isset($_POST['submit'])){
     $email = $_POST['nemail'];
     $password = $_POST['npassword'];
@@ -21,10 +20,8 @@ if(isset($_POST['submit'])){
 
     if($email_count){
         $pass = mysqli_fetch_assoc($query);
-
-        // $db_pass = $pass['Password'];
-
-        // $pass_decode = password_verify($password,$db_pass);
+        $_SESSION['user_id'] = $pass['ID'];
+        
         if (md5($password) === $pass["Password"]) {
         // if($pass_decode){
             ?>

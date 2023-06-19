@@ -4,7 +4,7 @@
     <title>Forgot Password</title>
             <?php include'Links.php' ?>
             <?php include'DBconnect.php' ?>
-            <link rel="stylesheet" href="StyleForgot.css">
+            <link rel="stylesheet" href="css/StyleForgot.css">
 
     </head>
 

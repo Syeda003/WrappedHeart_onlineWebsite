@@ -7,7 +7,7 @@
   <title>Login Form validation</title>
   <?php include'Links.php' ?>
    <?php include'DBconnect.php' ?>
-  <link rel="stylesheet" href="StyleAdminLogin2.css">
+  <link rel="stylesheet" href="css/StyleAdminLogin2.css">
   
 </head>
 

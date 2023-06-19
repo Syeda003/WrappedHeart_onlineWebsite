@@ -4,12 +4,13 @@
 
 if(isset($_POST['add_product'])){
    $p_name = $_POST['p_name'];
+   $p_Bid = $_POST['p_Bid'];
    $p_price = $_POST['p_price'];
    $p_image = $_FILES['p_image']['name'];
    $p_image_tmp_name = $_FILES['p_image']['tmp_name'];
    $p_image_folder = 'uploaded_img/'.$p_image;
 
-   $insert_query = mysqli_query($conn, "INSERT INTO `products`(name, price, image) VALUES('$p_name', '$p_price', '$p_image')") or die('query failed');
+   $insert_query = mysqli_query($conn, "INSERT INTO `products`(name, BrandID, price, image) VALUES('$p_name','$p_Bid', '$p_price', '$p_image')") or die('query failed');
 
    if($insert_query){
       move_uploaded_file($p_image_tmp_name, $p_image_folder);
@@ -66,11 +67,12 @@ if(isset($_POST['update_product'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="styleproduct1.css">
+   <link rel="stylesheet" href="css/styleproduct1.css">
 
 </head>
 <body>
    
+
 <?php
 
 if(isset($message)){
@@ -87,12 +89,22 @@ if(isset($message)){
 
 <section>
 
-<form action="" method="post" class="add-product-form" enctype="multipart/form-data">
+<form action="" method="post" class="add-product-form" enctype="multipart/form-data" onsubmit="return validateForm()">
    <h3>add a new product</h3>
-   <input type="text" name="p_name" placeholder="enter the product name" class="box" required>
-   <input type="number" name="p_price" min="0" placeholder="enter the product price" class="box" required>
+   <input type="text" name="p_name" placeholder="Enter the product name" class="box" required>
+   <!-- <label for="mySelect">Product ID</label> -->
+   <select class="box" id="mySelect" required name="p_Bid">
+               <option disabled selected>Product ID</option>
+               <option>B1</option>
+               <option>T2</option>
+               <option>G3</option>
+               <option>C4</option>
+               <option>CH5</option>
+               <option>S6</option>
+   </select>
+   <input type="number" name="p_price" min="0" placeholder="Enter the product price" class="box" required>
    <input type="file" name="p_image" accept="image/png, image/jpg, image/jpeg" class="box" required>
-   <input type="submit" value="add the product" name="add_product" class="btn">
+   <input type="submit" value="Add the product" name="add_product" class="btn">
 </form>
 
 </section>
@@ -104,6 +116,7 @@ if(isset($message)){
       <thead>
          <th>product image</th>
          <th>product name</th>
+         <th>Product ID</th>
          <th>product price</th>
          <th>action</th>
       </thead>
@@ -119,6 +132,7 @@ if(isset($message)){
          <tr>
             <td><img src="uploaded_img/<?php echo $row['image']; ?>" height="100" alt=""></td>
             <td><?php echo $row['name']; ?></td>
+            <td><?php echo $row['BrandID']; ?></td>
             <td>$<?php echo $row['price']; ?>/-</td>
             <td>
                <a href="adminproduct.php?delete=<?php echo $row['id']; ?>" class="delete-btn" onclick="return confirm('are your sure you want to delete this?');"> <i class="fas fa-trash"></i> delete </a>

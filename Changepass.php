@@ -4,7 +4,7 @@
     <title>Change Password</title>
             <?php include'Links.php' ?>
             <?php include'DBconnect.php' ?>
-            <link rel="stylesheet" href="StyleChange.css">
+            <link rel="stylesheet" href="css/StyleChange.css">
 
     </head>
 

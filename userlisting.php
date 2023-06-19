@@ -7,7 +7,7 @@
    <title>admin panel</title>
    <?php include'Links.php' ?>
    <?php include'DBconnect.php' ?>
-   <link rel="stylesheet" href="styleproduct1.css">
+   <link rel="stylesheet" href="css/styleproduct1.css">
 
 </head>
 <header class="header">

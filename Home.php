@@ -4,7 +4,7 @@
 <head>
   <title>Bootstrap Example</title>
   <?php include'Links.php' ?>
-  <link rel="stylesheet" href="Home1.css">
+  <link rel="stylesheet" href="css/Home1.css">
 <body>
 
   <nav class="navbar nav_style navbar-expand-lg  text-bg-teritory fixed-top ">
@@ -27,7 +27,7 @@
             <a class="nav-link active" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Products</a>
+            <a class="nav-link active" href="HomeProducts.php">Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">Contact</a>

@@ -3,7 +3,7 @@
     <head>
         <title>Main Form</title>
         <?php include'Links.php' ?>
-        <link rel="stylesheet" href="Stylemain1.css"> 
+        <link rel="stylesheet" href="css/Stylemain1.css"> 
             
     </head>
    <body>
